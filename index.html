@@ -1,16 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+	<div class="tabs">
+		<p>
+			<span class="active" id="image">image</span>
+			<span id="video">video</span>
+		</p>
+		<div class="choice images">
+			<div>
+				<h4>Type:</h4>
+				<div>
+					<input type="radio" name="type" value="all">
+					<label for="">all</label>
+				</div>
+				<div>
+					<input type="radio" name="type" value="photo">
+					<label for="">photo</label>
+				</div>
+				<div>
+					<input type="radio" name="type" value="illustration">
+					<label for="">illustration</label>
+				</div>
+				<div>
+					<input type="radio" name="type" value="vector">
+					<label for="">vector</label>
+				</div>
+			</div>
 
-    <script src="js/script.js"></script>
+			<div>
+				<h4>Category:</h4>
+				<div>
+					<input type="radio" name="category" value="backgrounds">
+					<label for="">backgrounds</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="fashion">
+					<label for="">fashion</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="nature">
+					<label for="">nature</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="science">
+					<label for="">science</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="education">
+					<label for="">education</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="feelings">
+					<label for="">feelings</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="health">
+					<label for="">health</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="people">
+					<label for="">people</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="religion">
+					<label for="">religion</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="places">
+					<label for="">places</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="animals">
+					<label for="">animals</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="industry">
+					<label for="">industry</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="computer">
+					<label for="">computer</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="food">
+					<label for="">food</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="sports">
+					<label for="">sports</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="transportation">
+					<label for="">transportation</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="travel">
+					<label for="">travel</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="buildings">
+					<label for="">buildings</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="business">
+					<label for="">business</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="music">
+					<label for="">music</label>
+				</div>
+			</div>
+
+			<div>
+				<h4>Colors:</h4>
+				<div>
+					<input type="radio" name="colors" value="grayscale">
+					<label for="">grayscale</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="transparent">
+					<label for="">transparent</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="red">
+					<label for="">red</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="orange">
+					<label for="">orange</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="yellow">
+					<label for="">yellow</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="green">
+					<label for="">green</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="turquoise">
+					<label for="">turquoise</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="blue">
+					<label for="">blue</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="lilac">
+					<label for="">lilac</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="pink">
+					<label for="">pink</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="white">
+					<label for="">white</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="gray">
+					<label for="">gray</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="black">
+					<label for="">black</label>
+				</div>
+				<div>
+					<input type="radio" name="colors" value="brown">
+					<label for="">brown</label>
+				</div>
+			</div>
+
+			<div>
+				<h4>Amount:</h4>
+				<input type="number" max="200" min="3">
+			</div>
+			<button>Submit</button>
+		</div>
+
+		<div class="choice videos none">
+			<div>
+				<h4>Type:</h4>
+				<div>
+					<input type="radio" name="type" value="all">
+					<label for="">all</label>
+				</div>
+				<div>
+					<input type="radio" name="type" value="film">
+					<label for="">film</label>
+				</div>
+				<div>
+					<input type="radio" name="type" value="animation">
+					<label for="">animation</label>
+				</div>
+			</div>
+
+			<div>
+				<h4>Category:</h4>
+				<div>
+					<input type="radio" name="category" value="backgrounds">
+					<label for="">backgrounds</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="fashion">
+					<label for="">fashion</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="nature">
+					<label for="">nature</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="science">
+					<label for="">science</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="education">
+					<label for="">education</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="feelings">
+					<label for="">feelings</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="health">
+					<label for="">health</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="people">
+					<label for="">people</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="religion">
+					<label for="">religion</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="places">
+					<label for="">places</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="animals">
+					<label for="">animals</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="industry">
+					<label for="">industry</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="computer">
+					<label for="">computer</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="food">
+					<label for="">food</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="sports">
+					<label for="">sports</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="transportation">
+					<label for="">transportation</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="travel">
+					<label for="">travel</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="buildings">
+					<label for="">buildings</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="business">
+					<label for="">business</label>
+				</div>
+				<div>
+					<input type="radio" name="category" value="music">
+					<label for="">music</label>
+				</div>
+			</div>
+
+			<h4>Amount:</h4>
+			<input type="number" max="200" min="3">
+			<button>Submit</button>
+		</div>
+	</div>
+
+	<div class="content"></div>
+
+	<div class="wrapper">
+		<div class="box">
+			<img src="https://pixabay.com/get/g4845b7336fcc29f562de3bea9623996412d295a649b23e8ac25b32ad64eeb0e55bf1a2da0eaecbef88d71af2788a4b50241b3e726255fb1bd39ca61e50945896_1280.jpg" alt="">
+			<i>&#10008;</i>
+		</div>
+  </div>
+
+   <script src="js/script.js"></script>
 </body>
 </html>
