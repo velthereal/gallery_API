@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			let list = document.querySelectorAll('ul video');
 			let img = document.querySelector('.wrapper');
 			let content = document.querySelector('.wrapper .box');
-			let picture = document.querySelector('.wrapper .box video');
+			let picture = document.querySelector('.wrapper .box video source');
 			let exit = document.querySelector('.wrapper i');
 			for(let i = 0; i < list.length; i++){
 					list[i].addEventListener('click', function(){
